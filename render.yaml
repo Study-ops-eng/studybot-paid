@@ -1,7 +1,9 @@
+
 services:
   - type: web
     name: studybot-paid
     env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
+    region: oregon
