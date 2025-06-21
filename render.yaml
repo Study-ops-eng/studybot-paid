@@ -1,7 +1,13 @@
+# render.yaml
 services:
   - type: web
-    name: studybot-paid
-    runtime: python
-    pythonVersion: 3.11.6
-    buildCommand: pip install -r requirements.txt
+    name: studybot
+    env: python
+    plan: free
+    buildCommand: ""
     startCommand: python main.py
+    pythonVersion: 3.10
+    envVars:
+      - key: TOKEN
+        fromGroup: telegram-secrets
+
