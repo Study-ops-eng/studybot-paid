@@ -2,7 +2,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-TOKEN = "7650633591:AAFJFvsTfXSEKdNYRjmjv-24P0HO_9AyfKw"
+TOKEN = 7490240426:AAE_Xub0Lx7gAvZOJ2NTkffVwdnBjj3EDh0
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("📚 Welcome to StudyBot! Type /help to see available commands.")
