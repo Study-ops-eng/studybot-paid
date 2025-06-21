@@ -1,15 +1,25 @@
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 TOKEN = "7650633591:AAFJFvsTfXSEKdNYRjmjv-24P0HO_9AyfKw"
-OWNER_ID = 6295626651
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.id != OWNER_ID:
-        await update.message.reply_text("❌ Access Denied. Paid Users Only.")
-        return
-    await update.message.reply_text("✅ Welcome to the Study Bot!")
+    await update.message.reply_text("📚 Welcome to StudyBot! Type /help to see available commands.")
 
-app = ApplicationBuilder().token(TOKEN).build()
-app.add_handler(CommandHandler("start", start))
-app.run_polling()
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("""
+Available Commands:
+/start - Start the bot
+/help - Show this help message
+/buy - Get premium access info
+/subjects - List available subjects
+""")
+
+if __name__ == '__main__':
+    app = ApplicationBuilder().token(TOKEN).build()
+    
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("help", help_command))
+
+    app.run_polling()
