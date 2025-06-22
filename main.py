@@ -69,7 +69,7 @@ async def handle_subject_selection(update: Update, context: ContextTypes.DEFAULT
         return
 
     if subject == "general knowledge":
-        await update.message.reply_text("📄 General Knowledge Notes:\nhttps://t.me/c/2548876289/2")
+        await update.message.reply_text("📄 General Knowledge Notes:\nhttps://t.me/padhai_notes/2")
     else:
         await update.message.reply_text("🚧 Notes for this subject are not available yet.")
 
