@@ -3,7 +3,7 @@
 from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 
-TOKEN = "7650633591:AAFJFvsTfXSEKdNYRjmjv-24P0HO_9AyfKw"
+TOKEN = "8144912216:AAEK80FuyYa2hmZQudO-3oKnIYAqrumIKKY"
   # 🔁 Replace this with your actual token
 
 # 🔐 Known users who get free access after approval
