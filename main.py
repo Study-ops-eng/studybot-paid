@@ -10,11 +10,11 @@ requested_users = set()
 NOTES_SELECTION = range(1)
 
 notes_links = {
-    "à¤¸à¤¾à¤®à¤¾à¤¨à¥à¤¯ à¤œà¥à¤žà¤¾à¤¨ (General Knowledge)": "https://t.me/study_notes_channel/1",
-    "à¤—à¤£à¤¿à¤¤ (Math)": "https://t.me/study_notes_channel/2",
-    "à¤°à¥€à¤œà¤¨à¤¿à¤‚à¤— (Reasoning)": "https://t.me/study_notes_channel/3",
-    "à¤¹à¤¿à¤‚à¤¦à¥€ (Hindi)": "https://t.me/study_notes_channel/4",
-    "à¤‡à¤‚à¤—à¥à¤²à¤¿à¤¶ (English)": "https://t.me/study_notes_channel/5"
+   "General knowledge":" https://t.me/study_notes_channel/1", 
+    "Math":" https://t.me/study_notes_channel/2", 
+    "Reasoning":"https//t.me/study_notes_channel/3", 
+    "Hindi":"https//t.me/study_notes_channel/4", 
+    "English":"https//t.me/study_notes_channel/5", 
 }
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
