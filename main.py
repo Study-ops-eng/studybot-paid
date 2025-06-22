@@ -3,7 +3,7 @@
 from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 
-TOKEN = "YOUR_BOT_TOKEN_HERE"  # 🔁 Replace this with your actual token
+TOKEN = "7490240426:AAE_Xub0Lx7gAvZOJ2NTkffVwdnBjj3EDh0"  # 🔁 Replace this with your actual token
 
 # 🔐 Known users who get free access after approval
 known_users = [6295626651]  # 🧑‍💼 Add your Telegram numeric ID here (already added)
